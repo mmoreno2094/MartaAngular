@@ -1,0 +1,11 @@
+<div>
+  <input type="text" [(ngModel)]="todo.tarea"><!-- Hace referencia a la variable todo creada en el component.ts-->
+  <button>Crear Tarea</button>
+</div>
+<div>
+  <ul>
+    <li *ngFor="let todo of todos"><!--Esta es la forma apropiada de declarar variables en javascript. Crea la variable todo y va metiendo en ella cada variable del array todos-->
+      {{todo.tarea}}
+    </li>
+  </ul>
+</div>
